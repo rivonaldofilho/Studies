@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=380, height=500">
+  <title>StudyFlow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <h1>StudyFlow</h1>
+    <div class="streak-badge" id="streakBadge">
+      <span id="streakCount">0</span>
+      <span id="streakLabel">dias</span>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="timer" data-i18n="tabTimer">Timer</button>
+    <button class="tab" data-tab="tasks" data-i18n="tabTasks">Tarefas</button>
+    <button class="tab" data-tab="config" data-i18n="tabConfig">Config</button>
+  </nav>
+
+  <!-- Tab: Timer -->
+  <section id="timerPanel" class="panel active">
+    <div class="timer-display">
+      <span id="timerMinutes">25</span>:<span id="timerSeconds">00</span>
+    </div>
+    <div class="timer-mode">
+      <button class="mode-btn active" data-mode="focus" data-i18n="focus">Foco</button>
+      <button class="mode-btn" data-mode="shortBreak" data-i18n="shortBreak">Pausa Curta</button>
+      <button class="mode-btn" data-mode="longBreak" data-i18n="longBreak">Pausa Longa</button>
+    </div>
+    <div class="focus-duration" id="focusDurationSection">
+      <label class="focus-duration-label" data-i18n="focusDuration">Duração do foco</label>
+      <div class="focus-presets">
+        <button type="button" class="preset-btn" data-minutes="15">15 min</button>
+        <button type="button" class="preset-btn active" data-minutes="25">25 min</button>
+        <button type="button" class="preset-btn" data-minutes="45">45 min</button>
+        <button type="button" class="preset-btn" data-minutes="60">60 min</button>
+      </div>
+      <div class="focus-custom">
+        <input type="number" id="customMinutes" min="1" max="120" placeholder="" value="" data-i18n-placeholder="custom">
+        <span class="custom-label" data-i18n="min">min</span>
+      </div>
+    </div>
+    <div class="timer-controls">
+      <button id="btnStart" class="btn btn-primary" data-i18n="start">Iniciar</button>
+      <button id="btnPause" class="btn btn-secondary" disabled data-i18n="pause">Pausar</button>
+      <button id="btnReset" class="btn btn-ghost" data-i18n="reset">Resetar</button>
+    </div>
+  </section>
+
+  <!-- Tab: Tasks -->
+  <section id="tasksPanel" class="panel">
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="" maxlength="100" data-i18n-placeholder="newTask">
+      <button id="btnAddTask" class="btn btn-primary" data-i18n="add">Adicionar</button>
+    </div>
+    <ul id="taskList" class="task-list"></ul>
+  </section>
+
+  <!-- Tab: Config -->
+  <section id="configPanel" class="panel">
+    <h2 class="config-title" data-i18n="configTitle">Configurações</h2>
+    <div class="config-section">
+      <label class="config-label" data-i18n="configExtensionLang">Idioma da extensão</label>
+      <select id="selectExtensionLang" class="config-select">
+        <option value="browser" data-i18n="configAuto">Auto (navegador)</option>
+        <option value="en">English</option>
+        <option value="pt_BR">Português (Brasil)</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+    <div class="config-section">
+      <label class="config-label" data-i18n="configMessageLang">Idioma das mensagens motivacionais</label>
+      <select id="selectMessageLang" class="config-select">
+        <option value="browser" data-i18n="configAuto">Auto (navegador)</option>
+        <option value="en">English</option>
+        <option value="pt_BR">Português (Brasil)</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+    <p class="config-hint" data-i18n="configHint">Altere separadamente o idioma da extensão e das mensagens motivacionais.</p>
+    <button id="btnSaveConfig" class="btn btn-primary" data-i18n="configSave">Salvar</button>
+    <span id="configSaved" class="config-saved hidden" data-i18n="configSaved">Salvo!</span>
+  </section>
+
+  <!-- Modal: Mensagem Motivacional -->
+  <div id="quoteModal" class="modal hidden">
+    <div class="modal-content">
+      <p id="quoteText" class="quote-text"></p>
+      <p id="quoteAuthor" class="quote-author"></p>
+      <button id="btnCloseQuote" class="btn btn-primary" data-i18n="continue">Continuar</button>
+    </div>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

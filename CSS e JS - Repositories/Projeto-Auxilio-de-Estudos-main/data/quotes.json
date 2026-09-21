@@ -1,0 +1,32 @@
+{
+  "en": [
+    { "text": "The secret of getting ahead is getting started.", "author": "Mark Twain" },
+    { "text": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius" },
+    { "text": "Quality is not an act, it is a habit.", "author": "Aristotle" },
+    { "text": "The only way to do great work is to love what you do.", "author": "Steve Jobs" },
+    { "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill" },
+    { "text": "Don't watch the clock; do what it does. Keep going.", "author": "Sam Levenson" },
+    { "text": "The future belongs to those who believe in the beauty of their dreams.", "author": "Eleanor Roosevelt" },
+    { "text": "Every small step counts. Keep going!", "author": "StudyFlow" }
+  ],
+  "pt_BR": [
+    { "text": "O segredo de progredir é começar.", "author": "Mark Twain" },
+    { "text": "Não importa quão devagar você vá, desde que não pare.", "author": "Confúcio" },
+    { "text": "Cada pequeno passo conta. Continue assim!", "author": "StudyFlow" },
+    { "text": "A qualidade não é um ato, é um hábito.", "author": "Aristóteles" },
+    { "text": "O único meio de fazer um ótimo trabalho é amar o que você faz.", "author": "Steve Jobs" },
+    { "text": "O sucesso não é final, o fracasso não é fatal: é a coragem de continuar que conta.", "author": "Winston Churchill" },
+    { "text": "Não olhe o relógio; faça o que ele faz. Continue andando.", "author": "Sam Levenson" },
+    { "text": "O futuro pertence àqueles que acreditam na beleza dos seus sonhos.", "author": "Eleanor Roosevelt" }
+  ],
+  "es": [
+    { "text": "El secreto de avanzar es comenzar.", "author": "Mark Twain" },
+    { "text": "No importa qué tan lento vayas, siempre que no te detengas.", "author": "Confucio" },
+    { "text": "Cada pequeño paso cuenta. ¡Sigue así!", "author": "StudyFlow" },
+    { "text": "La calidad no es un acto, es un hábito.", "author": "Aristóteles" },
+    { "text": "La única forma de hacer un gran trabajo es amar lo que haces.", "author": "Steve Jobs" },
+    { "text": "El éxito no es definitivo, el fracaso no es fatal: es el valor de continuar lo que cuenta.", "author": "Winston Churchill" },
+    { "text": "No mires el reloj; haz lo que hace. Sigue adelante.", "author": "Sam Levenson" },
+    { "text": "El futuro pertenece a quienes creen en la belleza de sus sueños.", "author": "Eleanor Roosevelt" }
+  ]
+}

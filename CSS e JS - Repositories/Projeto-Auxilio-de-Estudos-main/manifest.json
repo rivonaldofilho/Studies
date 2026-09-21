@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "StudyFlow",
+  "version": "1.0.0",
+  "description": "Pomodoro timer com gamificação e To-Do para estudantes",
+  "permissions": [
+    "alarms",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://zenquotes.io/*",
+    "https://api.adviceslip.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}
